@@ -5,9 +5,10 @@ Template library for solving sudoku boards of arbitrary size
 An n-sudoku puzzle is an *n²* ✕ *n²* grid, which shall be labeled as *M* (or the "main" grid). This grid is further subdivided into *n²* subgrids, which shall be labeled as *Sᵢ* (for "Subgrid 1" to "Subgrid *n²*"), where *M* has *n* rows and *n* columns of subgrids.
 
 To solve an n-sudoku puzzle, one is given *M* with certain elements initialized to some number in the range 1 .. *n²*, and all other elements initialized to 0. One must find a grid with those initialized elements in their respective positions, and satisfying the following properties:
-1. Each of the *n²* rows of *M* contain the numbers 1 .. *n²*
-2. Each of the *n²* columns of *M* contain the numbers 1 .. *n²*
-3. Each of the *n²* subgrids of *M* contain the numbers 1 .. *n²*
+
+* Each of the *n²* rows of *M* contain the numbers 1 .. *n²*
+* Each of the *n²* columns of *M* contain the numbers 1 .. *n²*
+* Each of the *n²* subgrids of *M* contain the numbers 1 .. *n²*
 
 The traditional sudoku puzzle with which most people are accustomed to is considered a 3-sudoku under this definition. A 2-sudoku puzzle, might, for example, look like this:
 
