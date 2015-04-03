@@ -117,7 +117,7 @@ namespace sudoku {
 		constexpr auto ts = sq * sq; // N^4 constant (tesseract)
 
 		// Helper function to do recursive backtracking over the grid
-		std::function<bool(int)> attempt = [&](std::size_t i) -> bool {
+		std::function<bool(std::size_t)> attempt = [&](std::size_t i) -> bool {
 			// Check if we've solved the puzzle if we're past the last element
 			if (i == ts) return is_solved<IntegralType, N>(M);
 
